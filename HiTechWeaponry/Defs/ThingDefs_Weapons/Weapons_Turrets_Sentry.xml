@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThingDefs>
+	<!-- Auto Plasma Turret Gun -->
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Gun_PlasmaMinigunTurret</defName>
+		<label>Plasma Turret</label>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Plasma Minigun attached to an automated base.</description>
+		<soundInteract>InteractPTUR</soundInteract>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<AimEfficiency>1.25</AimEfficiency>
+			<ShotSpread>0.08</ShotSpread>
+			<SwayFactor>1.80</SwayFactor>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.41</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_PlasmaCharge</projectileDef>
+				<warmupTime>1.20</warmupTime>
+				<range>85</range>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<soundCast>ShotPlasma</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>15</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>150</magazineSize>
+				<reloadTicks>200</reloadTicks>
+				<spawnUnloaded>true</spawnUnloaded>
+				<ammoSet>AmmoSet_PCannister</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+				<aiUseBurstMode>TRUE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+				<noSnapshot>true</noSnapshot>
+				<noSingleShot>true</noSingleShot>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- Auto Gauss Turret Gun-->
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Gun_GaussTurret</defName>
+		<label>Gauss Turret</label>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>Gauss Magnetic Accelerator attached to an automated base.</description>
+		<soundInteract>InteractPTUR</soundInteract>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<AimEfficiency>1.25</AimEfficiency>
+			<ShotSpread>0.08</ShotSpread>
+			<SwayFactor>1.80</SwayFactor>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="Combat_Realism.VerbPropertiesCR">
+				<recoilPattern>Mounted</recoilPattern>
+				<recoilAmount>0.41</recoilAmount>
+				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<projectileDef>Bullet_MagneticCharge</projectileDef>
+				<warmupTime>1.20</warmupTime>
+				<range>85</range>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>RS_ShotBoreas</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="Combat_Realism.CompProperties_AmmoUser">
+				<magazineSize>150</magazineSize>
+				<reloadTicks>200</reloadTicks>
+				<spawnUnloaded>true</spawnUnloaded>
+				<ammoSet>AmmoSet_GCartridge</ammoSet>
+			</li>
+			<li Class="Combat_Realism.CompProperties_FireModes">
+				<aimedBurstShotCount>3</aimedBurstShotCount>
+				<aiUseBurstMode>TRUE</aiUseBurstMode>
+				<aiUseAimMode>TRUE</aiUseAimMode>
+				<noSnapshot>true</noSnapshot>
+				<noSingleShot>true</noSingleShot>
+			</li>
+		</comps>
+	</ThingDef>
+</ThingDefs>

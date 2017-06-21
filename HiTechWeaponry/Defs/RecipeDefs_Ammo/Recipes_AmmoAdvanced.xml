@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+  <!-- PC -->
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_PlasmaCannister</defName>
+    <label>make Plasma Cannisters x80</label>
+    <description>Craft 80 Plasma cannisters.</description>
+    <jobString>Making Plasma cannisters.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+			<categories>
+						<li>SLDBar</li>
+            </categories>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+			<categories>
+						<li>USLDBar</li>
+            </categories>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BiosyntheticMaterial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+                    </categories>
+      <thingDefs>
+            <li>BiosyntheticMaterial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_PlasmaCannister>80</Ammo_PlasmaCannister>
+    </products>
+  </RecipeDef>
+  <!-- Gauss -->
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_GaussCartridge</defName>
+    <label>make gauss cartridge x40</label>
+    <description>Craft 40 gauss cartridges.</description>
+    <jobString>Making gauss cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+			<categories>
+						<li>HCMBar</li>
+            </categories>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+			<categories>
+						<li>USLDBar</li>
+            </categories>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SyntheticAmmonia</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MagneticMaterial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+                    </categories>
+      <thingDefs>
+            <li>SyntheticAmmonia</li>
+            <li>MagneticMaterial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_GaussCartridge>40</Ammo_GaussCartridge>
+    </products>
+  </RecipeDef>
+</RecipeDefs>

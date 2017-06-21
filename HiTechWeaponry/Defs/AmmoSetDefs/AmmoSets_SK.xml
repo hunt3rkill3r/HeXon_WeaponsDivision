@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <Combat_Realism.AmmoSetDef>
+    <defName>AmmoSet_PCannister</defName>
+    <label>Plasma Cannister</label>
+	<ammoTypes>
+	  <li>Ammo_PlasmaCannister</li>
+	</ammoTypes>
+  </Combat_Realism.AmmoSetDef>
+  <Combat_Realism.AmmoSetDef>
+    <defName>AmmoSet_GCartridge</defName>
+    <label>Gauss Cartridge</label>
+	<ammoTypes>
+	  <li>Ammo_GaussCartridge</li>
+	</ammoTypes>
+  </Combat_Realism.AmmoSetDef>
+</Defs>

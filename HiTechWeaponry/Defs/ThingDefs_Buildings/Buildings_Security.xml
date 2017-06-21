@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+	<!-- Auto Plasma Turret -->
+	<ThingDef ParentName="TurretBase">
+		<defName>Turret_PlasmaMinigun</defName>
+		<label>Plasma Turret</label>
+		<graphicData>
+			<texPath>Buildings/Security/PlasmaBase</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Buildings/Security/PlasmaTurret_ico</uiIconPath>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>3200</WorkToBuild>
+			<Mass>120</Mass>
+			<Bulk>100</Bulk>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>300</costStuffCount>
+		<costList>
+			<AIPersonaCore>1</AIPersonaCore>
+			<SentryBlasterTurret_Crate>1</SentryBlasterTurret_Crate>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>2000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<description>A state-of-the-art AI-controlled plasma turret. Requires 2000w to operate.</description>
+		<size>(2,2)</size>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Gun_PlasmaMinigunTurret</turretGunDef>
+			<turretTopgraphicPath>Buildings/Security/PlasmaTurret</turretTopgraphicPath>
+		</building>
+		<!--<specialDisplayRadius>85</specialDisplayRadius>-->
+		<minifiedDef>MinifiedTurret_Blaster</minifiedDef>
+		<researchPrerequisites><li>SK_Futuristicturrets</li></researchPrerequisites>
+	</ThingDef>
+	<!-- Auto Gauss Turret -->
+	<ThingDef ParentName="TurretBase">
+		<defName>Turret_Gauss</defName>
+		<label>Gauss Turret</label>
+		<graphicData>
+			<texPath>Buildings/Security/PlasmaBase</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Buildings/Security/GaussTurret_ico</uiIconPath>
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>3200</WorkToBuild>
+			<Mass>120</Mass>
+			<Bulk>100</Bulk>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>300</costStuffCount>
+		<costList>
+			<AIPersonaCore>1</AIPersonaCore>
+			<SentryBlasterTurret_Crate>1</SentryBlasterTurret_Crate>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>2000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<description>A state-of-the-art AI-controlled gauss turret. Requires 2000w to operate.</description>
+		<size>(2,2)</size>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<turretGunDef>Gun_GaussTurret</turretGunDef>
+			<turretTopgraphicPath>Buildings/Security/GaussTurret</turretTopgraphicPath>
+		</building>
+		<!--<specialDisplayRadius>85</specialDisplayRadius>-->
+		<minifiedDef>MinifiedTurret_Blaster</minifiedDef>
+		<researchPrerequisites><li>SK_Futuristicturrets</li></researchPrerequisites>
+	</ThingDef>
+</ThingDefs>

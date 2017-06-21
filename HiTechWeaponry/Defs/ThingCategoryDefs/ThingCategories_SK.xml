@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+	<ThingCategoryDef>
+      <defName>AmmoPlasmaCannister</defName>
+      <label>Plasma Cannister</label>
+      <parent>AmmoAdvanced</parent>
+    </ThingCategoryDef>
+	<ThingCategoryDef>
+      <defName>AmmoGaussCartridge</defName>
+      <label>Gauss Cartridge</label>
+      <parent>AmmoAdvanced</parent>
+    </ThingCategoryDef>
+</ThingCategoryDefs>

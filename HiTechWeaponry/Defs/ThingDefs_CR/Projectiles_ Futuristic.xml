@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+  <!-- Plasma Cannister Projectile -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_PlasmaCharge</defName>
+    <thingClass>SK.Projectile_PlasmaCR</thingClass>
+    <label>Plasma Cannister</label>
+    <graphicData>
+      <texPath>Things/Projectile/PlasmaPulse</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>PlasmaLiquid</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+	  <armorPenetration>0.8</armorPenetration>
+      <speed>170</speed>
+      <!--<secondaryDamage>
+        <li>
+          <def>KineticPulse</def>
+          <amount>6</amount>
+        </li>
+      </secondaryDamage>-->
+    </projectile>
+  </ThingDef>
+    <!-- Gauss Cartridge Projectile -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_MagneticCharge</defName>
+    <thingClass>SK.Projectile_PlasmaCR</thingClass>
+    <label>Magnetic Charge</label>
+    <graphicData>
+      <texPath>Things/Projectile/MagneticCharge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>KineticPulse</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+	  <armorPenetration>0.8</armorPenetration>
+      <speed>180</speed>
+    </projectile>
+  </ThingDef>
+</ThingDefs>

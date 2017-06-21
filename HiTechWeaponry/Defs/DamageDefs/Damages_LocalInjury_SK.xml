@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <DamageDef ParentName="LocalInjuryBase">
+    <defName>PlasmaLiquid</defName>
+    <label>Liquid Plasma</label>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been melted.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <explosionDamage>4</explosionDamage>
+    <explosionBuildingDamageFactor>8</explosionBuildingDamageFactor>
+    <explosionHeatEnergyPerCell>3</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_SmokeGreen</explosionCellMote>
+    <soundExplosion>Explosion_PlasmaEXP</soundExplosion>
+  </DamageDef>
+</Defs>

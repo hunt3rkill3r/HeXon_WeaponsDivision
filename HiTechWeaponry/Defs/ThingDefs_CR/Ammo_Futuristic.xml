@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+  <!-- Plasma turret -->
+  <ThingDef Class="Combat_Realism.AmmoDef" ParentName="AmmoBase">
+    <defName>Ammo_PlasmaCannister</defName>
+    <label>Plasma Cannister</label>
+    <description></description>
+	<tradeTags>
+	  <li>CR_AutoEnableCrafting</li>
+	</tradeTags>
+    <thingCategories>
+      <li>AmmoPlasmaCannister</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Combat/Ammo/Plasma/PCannister</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+		<MarketValue>4</MarketValue>
+		<Mass>0.01</Mass>
+		<Bulk>0.01</Bulk>
+    </statBases>
+	<stackLimit>600</stackLimit>
+	<linkedProjectile>Bullet_PlasmaCharge</linkedProjectile>
+	<ammoClass>PlasmaCannister</ammoClass>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+  </ThingDef>
+    <!-- Gauss turret -->
+  <ThingDef Class="Combat_Realism.AmmoDef" ParentName="AmmoBase">
+    <defName>Ammo_GaussCartridge</defName>
+    <label>Gauss Cartridge</label>
+    <description></description>
+	<tradeTags>
+	  <li>CR_AutoEnableCrafting</li>
+	</tradeTags>
+    <thingCategories>
+      <li>AmmoGaussCartridge</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Combat/Ammo/Gauss/GCartridge</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+		<MarketValue>6</MarketValue>
+		<Mass>0.01</Mass>
+		<Bulk>0.01</Bulk>
+    </statBases>
+	<stackLimit>600</stackLimit>
+	<linkedProjectile>Bullet_MagneticCharge</linkedProjectile>
+	<ammoClass>GaussC</ammoClass>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+  </ThingDef>
+</ThingDefs>
