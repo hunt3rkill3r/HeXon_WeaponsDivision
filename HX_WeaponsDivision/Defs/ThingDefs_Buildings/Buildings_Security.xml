@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ThingDefs>
-	<!-- Auto Plasma Turret -->
+	<!-- Auto Liquid Plasma Turret -->
 	<ThingDef ParentName="TurretBase">
 		<defName>Turret_PlasmaMinigun</defName>
 		<label>Plasma Turret</label>
 		<graphicData>
-			<texPath>Buildings/Security/PlasmaBase</texPath>
+			<texPath>Buildings/Security/TurretBaseA</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<shadowData>
@@ -52,7 +52,7 @@
 		<defName>Turret_Gauss</defName>
 		<label>Gauss Turret</label>
 		<graphicData>
-			<texPath>Buildings/Security/PlasmaBase</texPath>
+			<texPath>Buildings/Security/TurretBaseA</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
 			<shadowData>

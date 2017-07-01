@@ -12,16 +12,16 @@
 		<soundInteract>InteractPTUR</soundInteract>
 		<statBases>
 			<MarketValue>2000</MarketValue>
-			<AimEfficiency>1.25</AimEfficiency>
+			<SightsEfficiency>1.25</SightsEfficiency>
 			<ShotSpread>0.08</ShotSpread>
 			<SwayFactor>1.80</SwayFactor>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
-			<li Class="Combat_Realism.VerbPropertiesCR">
+			<li Class="CombatExtended.VerbPropertiesCE">
 				<recoilPattern>Mounted</recoilPattern>
 				<recoilAmount>0.41</recoilAmount>
-				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<projectileDef>Bullet_PlasmaCharge</projectileDef>
 				<warmupTime>1.20</warmupTime>
@@ -34,16 +34,16 @@
 			</li>
 		</verbs>
 		<comps>
-			<li Class="Combat_Realism.CompProperties_AmmoUser">
+			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>150</magazineSize>
-				<reloadTicks>200</reloadTicks>
+				<reloadTime>5.00</reloadTime>
 				<spawnUnloaded>true</spawnUnloaded>
 				<ammoSet>AmmoSet_PCannister</ammoSet>
 			</li>
-			<li Class="Combat_Realism.CompProperties_FireModes">
+			<li Class="CombatExtended.CompProperties_FireModes">
 				<aimedBurstShotCount>3</aimedBurstShotCount>
 				<aiUseBurstMode>TRUE</aiUseBurstMode>
-				<aiUseAimMode>TRUE</aiUseAimMode>
+				<aiAimMode>Snapshot</aiAimMode>
 				<noSnapshot>true</noSnapshot>
 				<noSingleShot>true</noSingleShot>
 			</li>
@@ -61,16 +61,16 @@
 		<soundInteract>InteractPTUR</soundInteract>
 		<statBases>
 			<MarketValue>2000</MarketValue>
-			<AimEfficiency>1.25</AimEfficiency>
+			<SightsEfficiency>1.25</SightsEfficiency>
 			<ShotSpread>0.08</ShotSpread>
 			<SwayFactor>1.80</SwayFactor>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 		</statBases>
 		<verbs>
-			<li Class="Combat_Realism.VerbPropertiesCR">
+			<li Class="CombatExtended.VerbPropertiesCE">
 				<recoilPattern>Mounted</recoilPattern>
 				<recoilAmount>0.41</recoilAmount>
-				<verbClass>Combat_Realism.Verb_ShootCR</verbClass>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<projectileDef>Bullet_MagneticCharge</projectileDef>
 				<warmupTime>1.20</warmupTime>
@@ -83,16 +83,16 @@
 			</li>
 		</verbs>
 		<comps>
-			<li Class="Combat_Realism.CompProperties_AmmoUser">
+			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>150</magazineSize>
-				<reloadTicks>200</reloadTicks>
+				<reloadTime>5.00</reloadTime>
 				<spawnUnloaded>true</spawnUnloaded>
 				<ammoSet>AmmoSet_GCartridge</ammoSet>
 			</li>
-			<li Class="Combat_Realism.CompProperties_FireModes">
+			<li Class="CombatExtended.CompProperties_FireModes">
 				<aimedBurstShotCount>3</aimedBurstShotCount>
 				<aiUseBurstMode>TRUE</aiUseBurstMode>
-				<aiUseAimMode>TRUE</aiUseAimMode>
+				<aiAimMode>Snapshot</aiAimMode>
 				<noSnapshot>true</noSnapshot>
 				<noSingleShot>true</noSingleShot>
 			</li>

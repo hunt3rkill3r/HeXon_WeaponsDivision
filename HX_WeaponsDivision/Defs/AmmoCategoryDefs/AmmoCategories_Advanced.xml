@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<CombatExtended.AmmoCategoryDef>
+		<defName>PlasmaCannister</defName>
+		<label>Plasma Cannister</label>
+		<description>Cannisters of bio-synthetic plasma. These can melt the flesh of your bones.</description>
+	</CombatExtended.AmmoCategoryDef>
+	<CombatExtended.AmmoCategoryDef>
+		<defName>GaussC</defName>
+		<label>Gauss Cartridge</label>
+		<description>Cartridges of magneticly charged alloy that supercharges into a crushing impact. Get Rekt.</description>
+	</CombatExtended.AmmoCategoryDef>
+</Defs>

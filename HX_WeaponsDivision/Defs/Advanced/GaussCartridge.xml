@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>AmmoGaussCartridge</defName>
+		<label>Gauss Cartridge</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/AmmoAdvanced</iconPath>
+	</ThingCategoryDef>
+	<!-- AmmoSet -->
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_GCartridge</defName>
+		<label>Gauss Cartridge</label>
+		<ammoTypes>
+			<Ammo_GaussCartridge>Bullet_MagneticCharge</Ammo_GaussCartridge>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	<!-- Ammo -->
+	<ThingDef ParentName="SmallAmmoBase">
+		<defName>Ammo_GaussCartridge</defName>
+		<label>Gauss Cartridge</label> 
+		<description></description>   
+		<graphicData>
+			<texPath>Combat/Ammo/Gauss/GCartridge</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.3</Mass>
+			<Bulk>0.9</Bulk>
+			<MarketValue>22.28</MarketValue>
+		</statBases>
+		<stackLimit>350</stackLimit>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoGaussCartridge</li>
+		</thingCategories>
+		<ammoClass>GaussC</ammoClass>
+	</ThingDef>
+	<!-- Projectile -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_MagneticCharge</defName>
+		<label>Magnetic Charge</label>
+		<graphicData>
+			<texPath>Things/Projectile/MagneticCharge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>KineticPulse</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetration>0.8</armorPenetration>
+			<speed>140</speed>
+		</projectile>
+	</ThingDef>
+	<!-- Recipe -->
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_GaussCartridge</defName>
+		<label>make gauss cartridge x40</label>
+		<description>Craft 40 gauss cartridges.</description>
+		<jobString>Making gauss cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>HCMBar</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SyntheticAmmonia</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MagneticMaterial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+            </categories>
+			<thingDefs>
+				<li>SyntheticAmmonia</li>
+				<li>MagneticMaterial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_GaussCartridge>40</Ammo_GaussCartridge>
+		</products>
+	</RecipeDef>
+</Defs>
