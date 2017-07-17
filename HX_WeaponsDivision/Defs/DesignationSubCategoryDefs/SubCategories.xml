@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<SK.DesignationSubCategoryDef>
+	<ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_LRSTurrets</defName>
 		<label>Long Range Sentry Turrets</label>
 		<description>Long Range Sentry Turrets</description>
@@ -10,5 +10,5 @@
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
-	</SK.DesignationSubCategoryDef>
+	</ArchitectSense.DesignationSubCategoryDef>
 </Defs>
